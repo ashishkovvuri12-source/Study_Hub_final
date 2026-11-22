@@ -1,0 +1,632 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 6828 >>
+stream
+q
+0.080 0.240 0.480 rg
+0.00 756.89 595.28 85.00 re
+f
+Q
+
+q
+0.300 0.600 0.950 rg
+0.00 756.89 595.28 4.00 re
+f
+Q
+
+BT
+/F2 22 Tf
+1.000 1.000 1.000 rg
+50.00 803.89 Td
+(StudyHub  Full-Stack Educational Platform) Tj
+ET
+
+BT
+/F1 11 Tf
+0.820 0.900 1.000 rg
+50.00 781.89 Td
+(Project Overview, Architecture, Tech Stack, & Capabilities) Tj
+ET
+
+q
+0.940 0.960 1.000 rg
+0.750 0.850 0.980 RG
+1.00 w
+50.00 678.89 495.28 61.00 re
+B
+Q
+
+q
+0.200 0.450 0.850 rg
+50.00 678.89 4.00 61.00 re
+f
+Q
+
+BT
+/F2 10.5 Tf
+0.100 0.250 0.550 rg
+66.00 725.89 Td
+(Executive Summary) Tj
+ET
+
+BT
+/F1 9.5 Tf
+0.150 0.200 0.300 rg
+66.00 711.89 Td
+(StudyHub is a full-stack, role-based educational web application developed to centralize) Tj
+ET
+
+BT
+/F1 9.5 Tf
+0.150 0.200 0.300 rg
+66.00 698.89 Td
+(structured university & engineering course materials, interactive practice questions, and) Tj
+ET
+
+BT
+/F1 9.5 Tf
+0.150 0.200 0.300 rg
+66.00 685.89 Td
+(chapter-based video tutorials with modern responsive UX.) Tj
+ET
+
+BT
+/F2 18 Tf
+0.080 0.200 0.400 rg
+50.00 650.89 Td
+(1. Project Overview & Objectives) Tj
+ET
+
+q
+0.200 0.450 0.800 RG
+1.50 w
+50.00 642.89 m 545.28 642.89 l S
+Q
+
+BT
+/F1 10.5 Tf
+0.150 0.150 0.200 rg
+50.00 626.89 Td
+(StudyHub solves the problem of scattered learning materials by consolidating curriculum) Tj
+ET
+
+BT
+/F1 10.5 Tf
+0.150 0.150 0.200 rg
+50.00 612.19 Td
+(notes, YouTube video tutorials, and categorized exam question banks into an intuitive) Tj
+ET
+
+BT
+/F1 10.5 Tf
+0.150 0.150 0.200 rg
+50.00 597.49 Td
+(platform. Designed as a decoupled monorepo with both student and faculty/admin workflows,) Tj
+ET
+
+BT
+/F1 10.5 Tf
+0.150 0.150 0.200 rg
+50.00 582.79 Td
+(it bridges classroom teaching with self-paced digital learning.) Tj
+ET
+
+BT
+/F2 18 Tf
+0.080 0.200 0.400 rg
+50.00 554.09 Td
+(2. Core Features & User Capabilities) Tj
+ET
+
+q
+0.200 0.450 0.800 RG
+1.50 w
+50.00 546.09 m 545.28 546.09 l S
+Q
+
+BT
+/F2 13 Tf
+0.120 0.280 0.550 rg
+50.00 522.09 Td
+(Student Workflow) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 512.09 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 510.09 Td
+(Curriculum Exploration: Browse curated subjects \(Mathematics, Machine Learning, Java,) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 496.59 Td
+(Python\) with real-time chapter metrics.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 482.09 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 480.09 Td
+(Chapter-by-Chapter Notes: Access formatted study notes paired with relevant YouTube video) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 466.59 Td
+(lecture embeds and pagination.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 452.09 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 450.09 Td
+(Exam Practice Banks: Search, filter, and practice questions categorized by subject,) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 436.59 Td
+(chapter, and examination importance.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 422.09 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 420.09 Td
+(Personalization & Accessibility: User registration and login with JWT authentication,) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 406.59 Td
+(responsive mobile/desktop design, and dark/light theme switching.) Tj
+ET
+
+BT
+/F2 13 Tf
+0.120 0.280 0.550 rg
+50.00 382.09 Td
+(Faculty & Administrator Workflow) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 372.09 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 370.09 Td
+(Live Analytics Dashboard: Real-time overview of total registered users, subject) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 356.59 Td
+(distribution, chapters, and question counts.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 342.09 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 340.09 Td
+(User Directory Management: Inspect all registered student and faculty member profiles.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 325.59 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 323.59 Td
+(Dynamic Content Ingestion: Create new curriculum chapters, append practice questions, and) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 310.09 Td
+(update YouTube video links on active subjects.) Tj
+ET
+
+BT
+/F2 18 Tf
+0.080 0.200 0.400 rg
+50.00 283.59 Td
+(3. Technology Stack Breakdown) Tj
+ET
+
+q
+0.200 0.450 0.800 RG
+1.50 w
+50.00 275.59 m 545.28 275.59 l S
+Q
+
+q
+0.150 0.300 0.550 rg
+50.00 241.59 495.00 22.00 re
+f
+Q
+
+BT
+/F2 9.5 Tf
+1.000 1.000 1.000 rg
+58.00 248.59 Td
+(Layer) Tj
+ET
+
+BT
+/F2 9.5 Tf
+1.000 1.000 1.000 rg
+153.00 248.59 Td
+(Technology) Tj
+ET
+
+BT
+/F2 9.5 Tf
+1.000 1.000 1.000 rg
+328.00 248.59 Td
+(Purpose & Key Role) Tj
+ET
+
+q
+0.970 0.980 1.000 rg
+0.850 0.880 0.920 RG
+0.50 w
+50.00 219.59 495.00 22.00 re
+B
+Q
+
+BT
+/F2 9 Tf
+0.100 0.200 0.350 rg
+58.00 226.59 Td
+(Frontend UI) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+153.00 226.59 Td
+(React 18 + Vite \(TypeScript\)) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+328.00 226.59 Td
+(High-speed SPA with React Router 6 & custom themes) Tj
+ET
+
+q
+1.000 1.000 1.000 rg
+0.850 0.880 0.920 RG
+0.50 w
+50.00 197.59 495.00 22.00 re
+B
+Q
+
+BT
+/F2 9 Tf
+0.100 0.200 0.350 rg
+58.00 204.59 Td
+(Backend API) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+153.00 204.59 Td
+(Express.js + Node.js \(TypeScript\)) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+328.00 204.59 Td
+(Decoupled RESTful API endpoints with modular routing) Tj
+ET
+
+q
+0.970 0.980 1.000 rg
+0.850 0.880 0.920 RG
+0.50 w
+50.00 175.59 495.00 22.00 re
+B
+Q
+
+BT
+/F2 9 Tf
+0.100 0.200 0.350 rg
+58.00 182.59 Td
+(Database) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+153.00 182.59 Td
+(MongoDB + Mongoose ODM) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+328.00 182.59 Td
+(Schemas for Users, Subjects, Chapters, and Questions) Tj
+ET
+
+q
+1.000 1.000 1.000 rg
+0.850 0.880 0.920 RG
+0.50 w
+50.00 153.59 495.00 22.00 re
+B
+Q
+
+BT
+/F2 9 Tf
+0.100 0.200 0.350 rg
+58.00 160.59 Td
+(Security) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+153.00 160.59 Td
+(JWT & Bcrypt.js) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+328.00 160.59 Td
+(Stateless token authentication & salted password hashing) Tj
+ET
+
+q
+0.970 0.980 1.000 rg
+0.850 0.880 0.920 RG
+0.50 w
+50.00 131.59 495.00 22.00 re
+B
+Q
+
+BT
+/F2 9 Tf
+0.100 0.200 0.350 rg
+58.00 138.59 Td
+(Deployment) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+153.00 138.59 Td
+(Vercel Multi-Service Platform) Tj
+ET
+
+BT
+/F1 9 Tf
+0.200 0.200 0.250 rg
+328.00 138.59 Td
+(Zero-CORS monorepo routing, Fluid Compute, & atomic builds) Tj
+ET
+
+BT
+/F2 18 Tf
+0.080 0.200 0.400 rg
+50.00 109.59 Td
+(4. System Architecture & Routing Design) Tj
+ET
+
+q
+0.200 0.450 0.800 RG
+1.50 w
+50.00 101.59 m 545.28 101.59 l S
+Q
+
+BT
+/F1 10.5 Tf
+0.150 0.150 0.200 rg
+50.00 85.59 Td
+(The repository uses a modern decoupled architecture where the client SPA and backend REST) Tj
+ET
+
+BT
+/F1 10.5 Tf
+0.150 0.150 0.200 rg
+50.00 70.89 Td
+(API live in one unified repository and deploy atomically via Vercel Services:) Tj
+ET
+
+BT
+/F1 8.5 Tf
+0.5 0.5 0.5 rg
+50 28 Td
+(StudyHub Documentation  |  Page 1 of 2) Tj
+ET
+
+q
+0.85 0.85 0.85 RG
+0.5 w
+50 40 m 545.28 40 l S
+Q
+
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 5 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 1301 >>
+stream
+q
+0.200 0.450 0.800 rg
+54.00 793.89 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 791.89 Td
+(Decoupled Monorepo: Clean separation between client/ \(Vite React frontend\) and server/) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 778.39 Td
+(\(Express TypeScript API\).) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 763.89 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 761.89 Td
+(Single-Domain Routing: Vercel rewrites map /api/\(.*\) to Express and /\(.*\) to Vite,) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 748.39 Td
+(eliminating CORS issues entirely.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 733.89 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 731.89 Td
+(Connection Pooling: Serverless-optimized MongoDB connection caching to ensure ultra-fast) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 718.39 Td
+(response times on warm cloud lambdas.) Tj
+ET
+
+q
+0.200 0.450 0.800 rg
+54.00 703.89 4.00 4.00 re
+f
+Q
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 701.89 Td
+(Role-Based Guards: Strict JWT middleware guards distinguishing Student endpoints from) Tj
+ET
+
+BT
+/F1 10 Tf
+0.150 0.150 0.200 rg
+66.00 688.39 Td
+(Administrator privileges.) Tj
+ET
+
+BT
+/F1 8.5 Tf
+0.5 0.5 0.5 rg
+50 28 Td
+(StudyHub Documentation  |  Page 2 of 2) Tj
+ET
+
+q
+0.85 0.85 0.85 RG
+0.5 w
+50 40 m 545.28 40 l S
+Q
+
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 7 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000007146 00000 n 
+0000007288 00000 n 
+0000008641 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+8783
+%%EOF
