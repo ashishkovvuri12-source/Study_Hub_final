@@ -2,7 +2,7 @@
   "name": "studyhub-server",
   "version": "1.0.0",
   "description": "StudyHub Backend API with Node.js, Express, TypeScript, and MongoDB",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",

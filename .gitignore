@@ -4,9 +4,8 @@ client/node_modules/
 server/node_modules/
 
 # Production builds
-dist/
+/dist/
 client/dist/
-server/dist/
 
 # Environment variables
 .env
@@ -25,4 +24,5 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 ~$*
+screen shots/
 
