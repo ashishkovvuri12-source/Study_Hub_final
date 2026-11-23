@@ -35,11 +35,27 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Track whether auto-seed has run in this serverless instance
+let isSeeded = false;
+
 // Ensure database connection for API routes
 app.use(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-  if (req.path.startsWith('/api') && req.path !== '/api/health') {
+  const isApiRoute =
+    req.path.startsWith('/api') ||
+    req.path.startsWith('/auth') ||
+    req.path.startsWith('/materials') ||
+    req.path.startsWith('/admin');
+  const isHealth = req.path.includes('health');
+
+  if (isApiRoute && !isHealth) {
     try {
       await connectDB();
+      if (!isSeeded) {
+        isSeeded = true;
+        seedDatabase(false).catch((err: any) => {
+          console.warn('[Seed] Background auto-seed warning:', err?.message || err);
+        });
+      }
     } catch (err: any) {
       res.status(500).json({
         success: false,
@@ -51,20 +67,27 @@ app.use(async (req: Request, res: Response, next: NextFunction): Promise<void> =
   next();
 });
 
-// API Status
-app.get('/api/health', (_req: Request, res: Response) => {
+// API Status (supports both /api/health and /health)
+const healthHandler = (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     message: 'StudyHub Backend API is running smoothly',
     database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
     timestamp: new Date().toISOString()
   });
-});
+};
+app.get('/api/health', healthHandler);
+app.get('/health', healthHandler);
 
-// Mount Routes
+// Mount Routes with /api prefix
 app.use('/api/auth', authRoutes);
 app.use('/api/materials', materialRoutes);
 app.use('/api/admin', adminRoutes);
+
+// Mount Routes without /api prefix as fallback in case Vercel rewrites strip it
+app.use('/auth', authRoutes);
+app.use('/materials', materialRoutes);
+app.use('/admin', adminRoutes);
 
 // Static file serving:
 // 1. Serve built React client if available
@@ -110,5 +133,8 @@ if (!process.env.VERCEL) {
   });
 }
 
+// Export for both CommonJS (Vercel serverless runner) and ES modules
+module.exports = app;
+module.exports.default = app;
 export default app;
 
