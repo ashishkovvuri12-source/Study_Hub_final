@@ -21,9 +21,34 @@ const getHeaders = (): HeadersInit => {
 };
 
 const handleResponse = async <T>(res: Response): Promise<T> => {
-  const data = await res.json();
+  const contentType = res.headers.get('content-type') || '';
+  let data: any = null;
+
+  if (contentType.includes('application/json')) {
+    try {
+      data = await res.json();
+    } catch {
+      data = null;
+    }
+  }
+
   if (!res.ok) {
-    throw new Error(data.message || 'An error occurred during API request.');
+    let errorMessage = data?.message;
+    if (!errorMessage) {
+      const rawText = await res.text().catch(() => '');
+      if (rawText.includes('FUNCTION_INVOCATION_TIMEOUT')) {
+        errorMessage = 'Backend function timed out. Please check your MongoDB connection.';
+      } else if (rawText && !rawText.startsWith('<!DOCTYPE') && !rawText.startsWith('<html')) {
+        errorMessage = rawText;
+      } else {
+        errorMessage = `Server error (${res.status}): Please check backend logs or database connection.`;
+      }
+    }
+    throw new Error(errorMessage);
+  }
+
+  if (data === null) {
+    data = await res.json();
   }
   return data;
 };

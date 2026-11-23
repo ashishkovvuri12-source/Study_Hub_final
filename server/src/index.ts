@@ -14,27 +14,49 @@ import authRoutes from './routes/authRoutes';
 import materialRoutes from './routes/materialRoutes';
 import adminRoutes from './routes/adminRoutes';
 import { errorHandler } from './middleware/errorMiddleware';
+import mongoose from 'mongoose';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Connect to MongoDB & optionally auto-seed
-connectDB().then(() => {
-  seedDatabase(false).catch((err: any) => {
-    console.warn('[Seed] Auto-seed warning:', err?.message || err);
+// Connect to MongoDB & optionally auto-seed in local development
+if (!process.env.VERCEL) {
+  connectDB().then(() => {
+    seedDatabase(false).catch((err: any) => {
+      console.warn('[Seed] Auto-seed warning:', err?.message || err);
+    });
+  }).catch((err: any) => {
+    console.warn('[MongoDB] Local connection notice:', err.message);
   });
-});
+}
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Ensure database connection for API routes
+app.use(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  if (req.path.startsWith('/api') && req.path !== '/api/health') {
+    try {
+      await connectDB();
+    } catch (err: any) {
+      res.status(500).json({
+        success: false,
+        message: `Database connection error: ${err.message}. Please verify MONGODB_URI in Vercel project settings and ensure MongoDB Atlas allows 0.0.0.0/0 in Network Access.`
+      });
+      return;
+    }
+  }
+  next();
+});
+
 // API Status
 app.get('/api/health', (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     message: 'StudyHub Backend API is running smoothly',
+    database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
     timestamp: new Date().toISOString()
   });
 });
